@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <!-- Reveal -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvp_7wmMJzFr_atRtvsRTHiTweuMarz4S3aw&usqp=CAU" type="image/x-icon">
+</head>
+<body>
+    
+    <style>
+        form{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        html{
+            scroll-behavior: smooth;
+            scrollbar-color: red;
+            /* Set the scrollbar color to red */
+
+
+        }
+
+
+::-webkit-scrollbar-thumb {
+  background-color: red; /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Optional: Add rounded corners to the thumb */
+}
+        body{
+            background-image: url(/Users/prassadraj/ZBroCode/GuviTask/task2/blob-scene-haikei.png);
+            background-repeat:repeat-y;
+            background-size:cover;
+            height: 100%;
+            
+        }
+        #h{
+            background:linear-gradient(to right,rgb(255, 255, 255),rgb(39, 39, 39),rgb(204, 116, 68));
+            color: transparent;
+            font-size: xx-large;
+            background-clip: text;
+
+        }
+        #input{
+            width: 300px;
+            height: 30px;
+        }
+        #input:focus{
+            background: #000;
+            color: white;
+        }
+        #btn{
+            width: 90px;
+            height: 30px;
+            font-size: large;
+            background-color: antiquewhite;
+            border: 1px gray solid;
+
+        }
+        .container{
+            position: relative;
+        }
+        #btn:hover{
+            background-color: rgb(255, 189, 103);
+
+        }
+        body{
+            margin: auto;
+        }
+        .itemBox{
+            position: absolute;
+            right: -100%;
+            padding: 10px; 
+            border-radius: 30%;
+            /* width: 300px; */
+            padding-top: 30px;
+            display: grid;
+            justify-content: space-around;
+            gap: 100px;
+            max-height:40%;
+            grid-template-columns: repeat(3,2fr);
+            
+        }
+        .mealDiv{
+            background: #ffffff;
+            height: 500px;
+            width: 300px;
+            border-radius: 10%;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+        .receipe{
+            color: #ffffff;
+        }
+        .mealDiv>p{
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .mealDiv>h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+        .totop { width: 40px;
+            position:fixed;
+            bottom: 10px;
+            font-weight: 700;
+            right: 10px;
+             background: linear-gradient(rgb(255, 225, 144),rgb(248, 134, 11));
+             color: #050505;
+             padding: 10px;
+            border: none;
+             cursor: pointer;
+}
+    </style>
+       <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="FoodApi.js"></script>
+
+</body>
+</html>
